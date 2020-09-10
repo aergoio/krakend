@@ -21,4 +21,4 @@ build:
 coveralls: all
 	go get github.com/mattn/goveralls
 	go install github.com/mattn/goveralls
-	sh coverage.sh --coveralls
+	sh coverage.sh --html
