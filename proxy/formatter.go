@@ -260,7 +260,7 @@ func newFlatmapFormatter(cfg config.ExtraConfig, target, group string) EntityFor
 						op.Args = make([][]string, len(args))
 						for k, arg := range args {
 							if t, ok := arg.(string); ok {
-								op.Args[k] = strings.Split(t, ".")
+								op.Args[k] = strings.Split(t, ">")
 							}
 						}
 					}

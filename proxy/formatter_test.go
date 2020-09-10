@@ -468,23 +468,23 @@ func TestEntityFormatter_flatmap(t *testing.T) {
 					},
 					map[string]interface{}{
 						"type": "move",
-						"args": []interface{}{"a.b", "a.BOOOOO"},
+						"args": []interface{}{"a>b", "a>BOOOOO"},
 					},
 					map[string]interface{}{
 						"type": "del",
-						"args": []interface{}{"collection.*.b"},
+						"args": []interface{}{"collection>*>b"},
 					},
 					map[string]interface{}{
 						"type": "del",
-						"args": []interface{}{"collection.*.d"},
+						"args": []interface{}{"collection>*>d"},
 					},
 					map[string]interface{}{
 						"type": "del",
-						"args": []interface{}{"collection.*.e"},
+						"args": []interface{}{"collection>*>e"},
 					},
 					map[string]interface{}{
 						"type": "move",
-						"args": []interface{}{"collection.*.c", "collection.*.x"},
+						"args": []interface{}{"collection>*>c", "collection>*>x"},
 					},
 				},
 			},
@@ -559,23 +559,23 @@ func TestNewFlatmapMiddleware(t *testing.T) {
 					},
 					map[string]interface{}{
 						"type": "move",
-						"args": []interface{}{"a.b", "a.BOOOOO"},
+						"args": []interface{}{"a>b", "a>BOOOOO"},
 					},
 					map[string]interface{}{
 						"type": "del",
-						"args": []interface{}{"collection.*.b"},
+						"args": []interface{}{"collection>*>b"},
 					},
 					map[string]interface{}{
 						"type": "del",
-						"args": []interface{}{"collection.*.d"},
+						"args": []interface{}{"collection>*>d"},
 					},
 					map[string]interface{}{
 						"type": "del",
-						"args": []interface{}{"collection.*.e"},
+						"args": []interface{}{"collection>*>e"},
 					},
 					map[string]interface{}{
 						"type": "move",
-						"args": []interface{}{"collection.*.c", "collection.*.x"},
+						"args": []interface{}{"collection>*>c", "collection>*>x"},
 					},
 				},
 			},
