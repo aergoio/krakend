@@ -10,3 +10,4 @@ server.rsa.key
 bench_res
 
 *DS_Store
+.cover

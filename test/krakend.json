@@ -318,7 +318,7 @@
                           "flatmap_filter": [
                             {
                                 "type": "del",
-                                "args": ["collection.*.date"]
+                                "args": ["collection>*>date"]
                             }
                           ]
                         }
@@ -340,7 +340,7 @@
                           "flatmap_filter": [
                             {
                                 "type": "move",
-                                "args": ["collection.*.date", "collection.*.created_at"]
+                                "args": ["collection>*>date", "collection>*>created_at"]
                             }
                           ]
                         }
